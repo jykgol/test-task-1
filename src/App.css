@@ -1,38 +1,144 @@
 .App {
+  display: flex;
+  justify-content: center;
+  padding: 50px 2%;
+}
+
+.container {
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0 0 0 1px pink;
+  width: min(100%, 1080px);
+  height: 100%;
+  border-radius: 1em;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* ------------------ Кнопки, заголовки таблицы ------------------ */
+
+.Table-header {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.T-header-el {
+  border-radius: 1em;
+  border: 0px;
+  box-shadow: 0 0 0 1px pink;
+  width: 90%;
+  justify-self: center;
+  word-wrap: break-word;
+  padding: 0.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ------------------ Зона фильтрации ------------------ */
+
+.T-Filter-Content-box{
+  width: 80%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Table-Filter {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.T-Filter-Header {
+  border-radius: 1em;
+  border: 0px;
+  box-shadow: 0 0 0 1px pink;
+  padding: 0.5em 1em;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.T-Filter-Content {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media (max-width:660px) {
+
+  .T-Filter-Content {
+    border-radius: 1em;
+    width: min(15em,80%);
+    border: 0px;
+    box-shadow: 0 0 0 1px pink;
+    padding: 0.5em 1em;
+    background-color: white;
+    flex-direction: column;
+    gap: 0.75em;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .T-Filter-Content>* {
+    width: 10em;
+    border-radius: 0.5em;
   }
+}
+
+.T-Filter-Content>* {
+  margin: 0;
+  padding: 0;
+  height: 1.5em !important;
+  text-align: center;
+}
+
+.T-Filter-Content>textarea {
+  resize: none;
+}
+
+.T-Filter-Content>button {
+  padding-inline: 1em;
+}
+
+/* ------------------ Элементы таблицы ------------------ */
+
+
+.Table-content {
+  padding: 1% 0;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.T-content-el {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  height: fit-content;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 25%;
+  list-style-type: none;
+  gap: 1%;
+  padding-inline: 1%;
+}
+
+.T-content-el>* {
+  text-align: center;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+/* ------------------ Элементы навигации ------------------ */
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2em;
+  gap:1em;
 }
