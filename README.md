@@ -21,3 +21,4 @@ ActionCreator функций, которые отвечают за создан�
  distance: 1000
 }]
 
+![image](https://user-images.githubusercontent.com/63459951/197208983-01349fc0-b357-45b2-976a-4f2ad19631db.png)
