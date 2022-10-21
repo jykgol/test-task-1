@@ -22,3 +22,7 @@ ActionCreator функций, которые отвечают за создан�
 }]
 
 ![image](https://user-images.githubusercontent.com/63459951/197208983-01349fc0-b357-45b2-976a-4f2ad19631db.png)
+
+Так же приведу пример получаемых данных с сервера при запросе на url http://localhost:3080/api/table
+
+![image](https://user-images.githubusercontent.com/63459951/197209306-125ffc27-9609-4ac0-835f-be1b956fce7e.png)
